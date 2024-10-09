@@ -25,6 +25,6 @@ jobs:
         run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat
       - name: Run scan
         env:
-          APP: ${{ secrets.APP }}
-          USER: ${{ secrets.USER }}
+          APP: ${{ secrets.APP_TOKEN }}
+          USER: ${{ secrets.CUSTOMER_TOKEN }}
         run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at $APP -ct $USER
