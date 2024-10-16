@@ -30,4 +30,4 @@ jobs:
           APP: ${{ secrets.APP_TOKEN }}
           USER: ${{ secrets.CUSTOMER_TOKEN }}
         # run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at "$APP" -ct "$USER"
-        run: sudo boman-cli-uat -a run -at "$APP" -ct "$USER"
+        run: sudo boman-cli -a run -at "$APP" -ct "$USER"
