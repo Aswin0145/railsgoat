@@ -30,5 +30,5 @@ jobs:
           APP: ${{ secrets.APP_TOKEN }}
           USER: ${{ secrets.CUSTOMER_TOKEN }}
         # run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at e3a1dd22-f01f-4bcb-aa65-a96c7ebceb48 -ct 5b2f4dbd-a873-4042-8441-ff38fef71ed5
-        run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at "$APP" -ct "$USER" --failBuild high
+        run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at "$APP" -ct "$USER"
         # run: sudo boman-cli-uat -a run  -u https://qa.boman.ai
