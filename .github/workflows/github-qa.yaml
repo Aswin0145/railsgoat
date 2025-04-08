@@ -29,6 +29,6 @@ jobs:
         env:
           APP: ${{ secrets.APP_TOKEN }}
           USER: ${{ secrets.CUSTOMER_TOKEN }}
-        # run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at e3a1dd22-f01f-4bcb-aa65-a96c7ebceb48 -ct 5b2f4dbd-a873-4042-8441-ff38fef71ed5
+        # run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at 05af5627-00f6-470b-95f9-b5d4dbbf8a75 -ct 1d747e85-40c3-4e2c-98ff-6af0ed1a721f
         run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at "$APP" -ct "$USER"
         # run: sudo boman-cli-uat -a run  -u https://qa.boman.ai
