@@ -2,7 +2,7 @@ Auth:
   project_token: 8220da47-9bfe-42f5-bf64-51186a73eebd
   customer_token: 41bb9111-e57f-43d9-aa15-8c2e751ddb36
 SAST:
-  language: semgrep
+  language: opengrep
 DAST:
   type: WEB
   URL: https://demo.testfire.net/
