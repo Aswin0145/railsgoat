@@ -1,0 +1,19 @@
+name: Multiple job schedules
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # Every 5 minutes
+    - cron: "*/10 * * * *"  # Every 10 minutes
+
+jobs:
+  job1:
+    if: github.event.schedule == '*/5 * * * *'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "I run every 5 minutes"
+
+  job2:
+    if: github.event.schedule == '*/10 * * * *'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "I run every 10 minutes"
