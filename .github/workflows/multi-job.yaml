@@ -17,3 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "I run every 10 minutes"
+
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run every 5 minutes
+        run: echo "Job1 runs every 5 minutes"
