@@ -25,7 +25,7 @@ jobs:
       - name: Install packages
         # run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat
         # run: sudo pip install boman-cli
-        run: sudo pip install boman-cli==2.5.1
+        run: sudo pip install boman-cli
       - name: Run scan
         env:
           APP: ${{ secrets.APP_TOKEN }}
