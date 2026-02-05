@@ -1,0 +1,16 @@
+Auth:
+  project_token: 0c262027-f343-4f60-94ba-7fea98376b59
+  customer_token: b93b0db3-ed63-4dac-85c4-19d7b99d716e
+SAST:
+  language: opengrep
+DAST:
+  type: WEB
+  URL: https://demo.testfire.net/
+SCA:
+  language: ruby
+Secret_Scan: true
+container_scan:
+  type: config
+  target: ''
+SBOM: true
+IAC: true
