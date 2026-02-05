@@ -28,5 +28,5 @@ jobs:
       - name: Run scan
         # run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at 934d74a9-7ff0-49c3-bc40-7fcd61738580 -ct 48bbf89e-b5c7-419e-8f56-6f00b53a6a86
         # run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at "$APP" -ct "$USER"
-        run: sudo boman-cli-uat -a run  -u https://qa.boman.ai -config boman-testmail10.yaml
-        # run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at 0c262027-f343-4f60-94ba-7fea98376b59 -ct b93b0db3-ed63-4dac-85c4-19d7b99d716e
+        # run: sudo boman-cli-uat -a run  -u https://qa.boman.ai -config boman-testmail10.yaml
+        run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at 0c262027-f343-4f60-94ba-7fea98376b59 -ct b93b0db3-ed63-4dac-85c4-19d7b99d716e
