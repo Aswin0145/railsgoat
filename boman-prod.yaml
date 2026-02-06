@@ -1,5 +1,5 @@
 Auth:
-  project_token: 8220da47-9bfe-42f5-bf64-51186a73eebd
+  project_token: 42c6c620-0362-40c2-8cee-e5d70a6560d7
   customer_token: 41bb9111-e57f-43d9-aa15-8c2e751ddb36
 SAST:
   language: opengrep
