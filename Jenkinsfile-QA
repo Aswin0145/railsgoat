@@ -1,0 +1,35 @@
+pipeline {
+  agent any
+  stages {
+    stage('prerequisites check') {
+      steps {
+        sh '''
+          echo "--- Checking Python & Pip Readiness ---"
+          python3 --version
+          pip3 --version
+          echo "--- Checking VENV Readiness ---"
+          python3 -m venv --help > /dev/null && echo "venv module is present"
+          echo "--- Checking Docker Readiness ---"
+          docker ps
+        '''
+      }
+    }
+    stage('install essential for boman') {
+      steps {
+        sh '''
+          python3 -m venv /opt/boman-env
+          . /opt/boman-env/bin/activate
+          pip install --no-cache-dir --upgrade --extra-index-url https://test.pypi.org/simple/ boman-cli-uat
+        '''
+      }
+    }
+    stage('Bomanai QA') {
+      steps {
+        sh '''
+          . /opt/boman-env/bin/activate
+          boman-cli-uat -a run -u https://qa.boman.ai -at <APP_TOKEN> -ct <CUSTOMER_TOKEN>
+        '''
+      }
+    }
+  }
+}
