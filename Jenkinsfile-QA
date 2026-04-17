@@ -17,7 +17,7 @@ pipeline {
     stage('Bomanai QA') {
       steps {
         sh '''
-          . /opt/boman-env/bin/activate
+          pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat
           boman-cli-uat -a run -u https://qa.boman.ai -at <APP_TOKEN> -ct <CUSTOMER_TOKEN>
         '''
       }
