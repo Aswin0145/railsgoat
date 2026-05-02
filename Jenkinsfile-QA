@@ -19,7 +19,7 @@ pipeline {
         sh '''
           pip install "setuptools<70"
           pip install --extra-index-url https://test.pypi.org/simple/ --upgrade boman-cli-uat
-          boman-cli-uat -a run -u https://qa.boman.ai -at "APP_TOKEN" -ct "CUSTOMER_TOKEN"
+          boman-cli-uat -a run -u https://qa.boman.ai -at fe08c16b-1f8a-418f-95c2-a86f6d6b1c60 -ct 1d747e85-40c3-4e2c-98ff-6af0ed1a721f
         '''
       }
     }
