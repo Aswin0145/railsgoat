@@ -31,4 +31,5 @@ jobs:
           USER: ${{ secrets.CUSTOMER_TOKEN }}
         # run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at "$APP" -ct "$USER"
         # run: sudo boman-cli -a run -at "$APP" -ct "$USER"
-        run: sudo boman-cli -a run -config boman-prod.yaml
+        run: sudo boman-cli -a run -at "76258834-ccf7-4c5e-939a-6cca6f98f456" -ct "41bb9111-e57f-43d9-aa15-8c2e751ddb36"
+        # run: sudo boman-cli -a run -config boman-prod.yaml
